@@ -6,26 +6,26 @@ import type { Translations } from "@/lib/translations";
 const pricingItems = [
   {
     name: { pl: "Sterownik do odkurzaczy (1-2 stanowiska)", en: "Vacuum Controller (1-2 stations)" },
-    price: "—",
+    price: { pl: "550 zł", en: "550 PLN" },
     features: {
-      pl: ["2 wyjscia przekaznikowe 230V/6A", "3 wejscia platnosci", "Wyswietlacz TFT + WiFi", "OTA firmware updates", "Obudowa carbon fiber"],
-      en: ["2 relay outputs 230V/6A", "3 payment inputs", "TFT display + WiFi", "OTA firmware updates", "Carbon fiber enclosure"],
+      pl: ["2 wyjścia przekaźnikowe 230V/6A", "Monety, Nayax i kasa Novitus", "Wyświetlacz TFT + WiFi", "OTA firmware updates", "Obudowa carbon fiber"],
+      en: ["2 relay outputs 230V/6A", "Coins, Nayax & Novitus fiscal printer", "TFT display + WiFi", "OTA firmware updates", "Carbon fiber enclosure"],
     },
   },
   {
-    name: { pl: "Wyswietlacz impulsow LED", en: "LED Pulse Display" },
-    price: "—",
+    name: { pl: "Sterownik + Wyświetlacz LED", en: "Controller + LED Display" },
+    price: { pl: "750 zł", en: "750 PLN" },
     features: {
-      pl: ["Czerwone cyfry 7-segment 5x7 cm", "Modbus RTU", "Zasilanie 24V z sterownika", "Diody sygnalizacyjne"],
-      en: ["Red 7-segment digits 5x7 cm", "Modbus RTU", "24V powered from controller", "Signal LEDs"],
+      pl: ["Wszystko z zestawu podstawowego", "Czerwone cyfry 7-segment 5x7 cm", "Modbus RTU", "Zasilanie 24V z sterownika", "Diody sygnalizacyjne"],
+      en: ["Everything from basic set", "Red 7-segment digits 5x7 cm", "Modbus RTU", "24V powered from controller", "Signal LEDs"],
     },
   },
   {
-    name: { pl: "Wyswietlacz impulsow LCD", en: "LCD Pulse Display" },
-    price: "—",
+    name: { pl: "Sterownik + Wyświetlacz LCD", en: "Controller + LCD Display" },
+    price: { pl: "1099 zł", en: "1099 PLN" },
     features: {
-      pl: ["Kolorowy ekran", "Impulsy + pogoda + zegar", "Modbus RTU", "Zasilanie 24V"],
-      en: ["Color screen", "Pulses + weather + clock", "Modbus RTU", "24V power"],
+      pl: ["Wszystko z zestawu podstawowego", "Kolorowy ekran LCD", "Impulsy + pogoda + zegar", "Modbus RTU", "Zasilanie 24V"],
+      en: ["Everything from basic set", "Color LCD screen", "Pulses + weather + clock", "Modbus RTU", "24V power"],
     },
   },
 ];
@@ -61,7 +61,7 @@ export default function PricingSection({
                 {item.name[locale]}
               </h3>
               <div className="text-3xl font-mono font-bold text-accent mb-6">
-                {item.price}
+                {item.price[locale]}
               </div>
               <ul className="flex-1 space-y-3 mb-8">
                 {item.features[locale].map((feature, j) => (

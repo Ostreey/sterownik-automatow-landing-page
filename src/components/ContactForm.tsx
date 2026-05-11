@@ -114,13 +114,19 @@ export default function ContactForm({ t }: { t: Translations }) {
           )}
         </form>
 
-        <div className="mt-10 text-center">
-          <p className="text-muted mb-3">{t.contact.orCall}</p>
+        <div className="mt-10 text-center space-y-3">
+          <p className="text-muted">{t.contact.orCall}</p>
           <a
-            href="tel:+48000000000"
-            className="text-accent text-xl font-mono font-bold hover:text-accent-hover transition-colors"
+            href="tel:+48605048487"
+            className="block text-accent text-xl font-mono font-bold hover:text-accent-hover transition-colors"
           >
-            +48 000 000 000
+            +48 605 048 487
+          </a>
+          <a
+            href="mailto:davosmartsolutions@gmail.com"
+            className="block text-muted hover:text-foreground transition-colors"
+          >
+            davosmartsolutions@gmail.com
           </a>
         </div>
       </div>

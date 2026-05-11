@@ -54,13 +54,13 @@ export default function Footer({
             <h4 className="font-semibold mb-4">{t.footer.contactTitle}</h4>
             <ul className="space-y-2 text-sm text-muted">
               <li>
-                <a href="tel:+48000000000" className="hover:text-foreground transition-colors">
-                  +48 000 000 000
+                <a href="tel:+48605048487" className="hover:text-foreground transition-colors">
+                  +48 605 048 487
                 </a>
               </li>
               <li>
-                <a href="mailto:kontakt@example.com" className="hover:text-foreground transition-colors">
-                  kontakt@example.com
+                <a href="mailto:davosmartsolutions@gmail.com" className="hover:text-foreground transition-colors">
+                  davosmartsolutions@gmail.com
                 </a>
               </li>
             </ul>
